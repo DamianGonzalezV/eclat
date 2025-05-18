@@ -10,16 +10,22 @@
     />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <title>Eclat</title>
+    <title>Eclat store</title>
   </head>
   <body>
-    <header class="hero overlay dimension hiden">
+    <header class="hero overlay dimension">
       <nav class="overlay-nav">
         <li class="eclat-brand">éclat</li>
         <li><i class="ph-bold ph-calendar-heart"></i></li>
         <li>
-          <button class="shopping-cart-btn" data-qa="shopping-cart-btn">
+          <button
+            class="shopping-cart-btn nav-rounded-btn"
+            data-qa="shopping-cart-btn"
+          >
             <i class="ph-bold ph-shopping-cart"></i>
+          </button>
+          <button class="nav-map-btn nav-rounded-btn" data-qa="nav-map-btn">
+            <i class="ph-bold ph-map-trifold"></i>
           </button>
         </li>
       </nav>
@@ -31,7 +37,7 @@
       </div>
       <button class="shop-btn" data-qa="shop-btn">Shop Now</button>
     </header>
-    <section class="shop-section dimension" data-qa="shop-section">
+    <section class="shop-section dimension hiden" data-qa="shop-section">
       <nav class="overlay-nav">
         <li class="eclat-brand">éclat</li>
         <li><i class="ph-bold ph-calendar-heart"></i></li>

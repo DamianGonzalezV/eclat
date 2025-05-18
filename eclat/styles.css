@@ -55,7 +55,8 @@ nav {
 }
 
 nav li,
-nav li .shopping-cart-btn i {
+nav li .shopping-cart-btn i,
+nav li .nav-map-btn i {
   list-style: none;
   font-size: 2.2rem;
   color: #f5e6dc;
@@ -73,12 +74,13 @@ nav li .shopping-cart-btn i {
   /* font-family: "Great Vibes", cursive; */
 }
 
-nav li .shopping-cart-btn i {
+nav li .shopping-cart-btn i,
+nav li .nav-map-btn i {
   color: black;
   font-size: 1.8rem;
 }
 
-.shopping-cart-btn {
+.nav-rounded-btn {
   border: none;
   width: 3rem;
   height: 3rem;
