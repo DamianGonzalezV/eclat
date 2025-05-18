@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffd4831e, #cda17d33);
+}
+
+.overlay {
+  border-image: fill 1 linear-gradient(to right, #ffd4830f, #cda17d16);
+}
+
+.overlay-nav {
+  border-image: fill 1 linear-gradient(to right, #dcdbd808, #d7d3d006);
+}
+
+.hero {
+  width: 99vw;
+  height: 95vh;
+  /* border-radius: 2rem; */
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: url("../images/heroportrait.jpeg") no-repeat center center/cover;
+  color: white;
+  /* min-block-size: 80vh; */
+  position: absolute;
+}
+
+nav {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 0;
+}
+
+nav li,
+nav li .shopping-cart-btn i {
+  list-style: none;
+  font-size: 2.2rem;
+  color: #f5e6dc;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.eclat-brand {
+  /* background-color: #f7efea61;
+  border-radius: 2rem;
+  padding: 0.1rem 1.2rem; */
+  /* color: #e9a7bb; */
+  font-size: 2.5rem;
+  /* font-family: "Great Vibes", cursive; */
+}
+
+nav li .shopping-cart-btn i {
+  color: black;
+  font-size: 1.8rem;
+}
+
+.shopping-cart-btn {
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 11rem;
+  font-weight: 500;
+  font-family: "Great Vibes", cursive;
+  color: #f5e6dc;
+}
+
+.hero div {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #da90a6;
+
+  font-weight: 600;
+
+  margin-top: 0.4rem;
+}
+
+.hero div .skin {
+  background-color: #ffd6ba;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  color: #ed8ba8;
+}
+
+.hero div .skincare {
+  background-color: #fdf4ee;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+.hero div .type {
+  background-color: #be8965;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  color: #ffd6ba;
+}
+
+.shop-btn {
+  border: 1px solid #c6866612;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 0.8rem 2.8rem;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  background-color: #e9a7bb;
+  /* color: #344f05; */
+}
