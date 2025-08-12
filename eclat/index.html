@@ -13,37 +13,111 @@
     <title>Eclat store</title>
   </head>
   <body>
+    <div class="hero-banner-promo">
+      <p>Free standard shipping to the US and Korea until Dec 02.</p>
+    </div>
     <header class="hero overlay dimension">
       <nav class="overlay-nav">
         <li class="eclat-brand">éclat</li>
-        <li><i class="ph-bold ph-calendar-heart"></i></li>
+        <!-- <li><i class="ph-bold ph-calendar-heart"></i></li> -->
         <li>
           <button
-            class="shopping-cart-btn nav-rounded-btn"
+            class="shopping-cart-btn btn-background nav-rounded-btn"
             data-qa="shopping-cart-btn"
           >
             <i class="ph-bold ph-shopping-cart"></i>
           </button>
-          <button class="nav-map-btn nav-rounded-btn" data-qa="nav-map-btn">
+          <button
+            class="nav-map-btn btn-background nav-rounded-btn"
+            data-qa="nav-map-btn"
+          >
             <i class="ph-bold ph-map-trifold"></i>
           </button>
         </li>
       </nav>
-      <h1>Glow Naturally</h1>
-      <div>
-        <skin class="skincare">Curated skincare for every</skin>
-        <span class="skin">skin</span>
-        <span class="type">type</span>
+      <!-- <h1>Glow Naturally</h1> -->
+      <div class="glow-line-box">
+        <h1>Glow Naturally</h1>
+        <div class="skincare-box">
+          <skin class="skincare">Curated skincare for every</skin>
+          <span class="skin">skin</span>
+          <span class="type">type</span>
+        </div>
+        <button class="shop-btn" data-qa="shop-btn">Shop Now</button>
       </div>
-      <button class="shop-btn" data-qa="shop-btn">Shop Now</button>
     </header>
+    <div class="about">
+      <p>
+        Inspired by 제주 (Jeju)’s natural glow, we craft each formula with the
+        finest Korean essences—like golden tangerine 🍊 and rare botanicals—to
+        keep skin luminous, hydrated, and youthful. Honored with Harper’s Glow
+        Award, we partnered with Lumière Labs to bring this vision to life
+      </p>
+    </div>
+    <div class="serums-section-grid">
+      <div class="serum-ind-box">
+        <img
+          src="/eclat/images/Minimalist Skincare Product Display.png"
+          alt="green serum"
+          class="serum-item"
+        />
+        <button class="serum-btn btn-background">
+          <i class="ph-bold ph-plus-circle ph-serum-add"></i>
+        </button>
+        <p class="serum-name">Radiance Revive Elixir</p>
+        <p class="serum-description">
+          Infused with fermented ginseng and white tea extract, this luxurious
+          serum restores skin luminosity and promotes a youthful, dewy glow.
+        </p>
+        <!--  -->
+      </div>
+      <div class="serum-ind-box">
+        <img
+          src="/eclat/images/Minimalist Skincare Product Display 2.png"
+          alt="green serum"
+          class="serum-item"
+        />
+        <button class="serum-btn btn-background">
+          <i class="ph-bold ph-plus-circle ph-serum-add"></i>
+        </button>
+        <p class="serum-name">Jeju Tangerine Vital Serum</p>
+        <p class="serum-description">
+          Packed with fresh Jeju tangerine essence and vitamin C, this
+          brightening formula energizes dull skin and evens out the complexion.
+        </p>
+      </div>
+      <div class="serum-ind-box">
+        <img
+          src="/eclat/images/Minimalist Skincare Product Display 3.png"
+          alt="green serum"
+          class="serum-item"
+        />
+        <button class="serum-btn btn-background">
+          <i class="ph-bold ph-plus-circle ph-serum-add"></i>
+        </button>
+        <p class="serum-name">Snow Blossom Essence</p>
+        <p class="serum-description">
+          Enriched with pearl extract and lotus flower water, this silky serum
+          hydrates deeply, leaving skin smooth, radiant, and velvety soft.
+        </p>
+      </div>
+    </div>
     <section class="shop-section dimension hiden" data-qa="shop-section">
       <nav class="overlay-nav">
         <li class="eclat-brand">éclat</li>
-        <li><i class="ph-bold ph-calendar-heart"></i></li>
+        <!-- <li><i class="ph-bold ph-calendar-heart"></i></li> -->
         <li>
-          <button class="shopping-cart-btn" data-qa="shopping-cart-btn">
+          <button
+            class="shopping-cart-btn btn-background nav-rounded-btn"
+            data-qa="shopping-cart-btn"
+          >
             <i class="ph-bold ph-shopping-cart"></i>
+          </button>
+          <button
+            class="nav-map-btn btn-background nav-rounded-btn"
+            data-qa="nav-map-btn"
+          >
+            <i class="ph-bold ph-map-trifold"></i>
           </button>
         </li>
       </nav>
@@ -55,9 +129,10 @@
             alt="complete-pack"
           />
           <p>Complete pack</p>
-          <button>Add to cart</button>
+          <button class="add-cart-btn">Add to cart</button>
         </div>
       </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>

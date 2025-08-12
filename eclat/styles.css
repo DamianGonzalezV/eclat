@@ -6,52 +6,70 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: max-content;
+
+  font-family: "Montserrat", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+
+  background: linear-gradient(to right, #ffd4830c, #cda17d0c);
+}
+
+.hero-banner-promo {
+  height: 30px;
+  width: 100%;
+  background-color: #be8965;
+  font-size: 0.8rem;
+  font-weight: 600;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #ffd4831e, #cda17d33);
 }
 
 .overlay {
-  border-image: fill 1 linear-gradient(to right, #ffd4830f, #cda17d16);
+  border-image: fill 1 linear-gradient(to right, #ffd4832e, #8961836d);
 }
 
 .overlay-nav {
-  border-image: fill 1 linear-gradient(to right, #dcdbd808, #d7d3d006);
-}
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 4rem;
 
-.dimension {
-  width: 99vw;
-  height: 95vh;
-  /* border-radius: 2rem; */
-  margin: auto;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
+  width: 100vw;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  background: url("./images/heroportrait.jpeg") no-repeat center center/cover;
+  background: url("./images/Black-and-White\ Portrait.png") no-repeat center
+    center/cover;
   color: white;
   /* min-block-size: 80vh; */
 }
 
-nav {
-  width: 100%;
-  height: 6rem;
+.glow-line-box {
+  /* margin-top: 15rem; */
+  width: 90%;
+  /* padding: 10rem; */
+  height: 600px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 1rem 2rem;
-  position: absolute;
-  top: 0;
 }
 
 nav li,
@@ -66,26 +84,31 @@ nav li .nav-map-btn i {
 }
 
 .eclat-brand {
-  /* background-color: #f7efea61;
-  border-radius: 2rem;
-  padding: 0.1rem 1.2rem; */
-  /* color: #e9a7bb; */
-  font-size: 2.5rem;
-  /* font-family: "Great Vibes", cursive; */
+  /* padding: 0.5rem 1.5rem; */
+  color: #e9a7bb;
+  font-size: 10.5rem;
+  font-weight: 300;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.2rem;
 }
 
 nav li .shopping-cart-btn i,
 nav li .nav-map-btn i {
-  color: black;
+  color: #be8965;
   font-size: 1.8rem;
 }
 
-.nav-rounded-btn {
+.btn-background {
   border: none;
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 50%;
   margin: auto;
+  background-color: #f5e6dc;
+}
+
+.nav-rounded-btn {
+  background-color: #ffd4830c;
 }
 
 .header-content {
@@ -99,7 +122,7 @@ nav li .nav-map-btn i {
 }
 
 .hero h1 {
-  font-size: 11rem;
+  font-size: 12rem;
   font-weight: 500;
   font-family: "Great Vibes", cursive;
   color: #f5e6dc;
@@ -123,7 +146,7 @@ nav li .nav-map-btn i {
 }
 
 .hero div .skincare {
-  background-color: #fdf4ee;
+  background-color: #2f231b;
   border-radius: 2rem;
   padding: 0.2rem 1rem;
 }
@@ -136,21 +159,92 @@ nav li .nav-map-btn i {
 }
 
 .shop-btn {
+  width: 18rem;
+  height: 3rem;
   border: 1px solid #c6866612;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 0.8rem 2.8rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 2rem;
   background-color: #e9a7bb;
-  /* color: #344f05; */
+}
+
+/* about */
+
+.about {
+  width: 80vw;
+  height: 250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10rem;
+
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+/* serums */
+
+.serums-section-grid {
+  /* margin-top: 8rem; */
+  width: 100%;
+  height: 800px;
+  background-color: #fcf6f6b7;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: relative;
+  /* padding-top: 3rem; */
+  padding: 3rem 6rem;
+}
+
+.serum-item {
+  width: 95%;
+}
+
+.serum-ind-box {
+  width: 90%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.serum-ind-box p {
+  margin-bottom: 0.8rem;
+}
+
+.serum-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.serum-btn {
+  top: left;
+
+  position: absolute;
+  top: 3rem; /* distancia desde arriba */
+  left: 11rem; /* distancia desde la izquierda */
+
+  background-color: #f5e6dc;
+}
+
+.ph-serum-add {
+  font-size: 3rem;
+  color: #be8965;
 }
 
 /* Shop section */
 
 .shop-section {
-  background-color: #cd8ea1;
+  background-color: #f5e6dc;
 
   display: flex;
   flex-direction: column;
@@ -159,8 +253,8 @@ nav li .nav-map-btn i {
 }
 
 .shop-grid {
-  width: 90%;
-  height: 80%;
+  width: 100vw;
+  height: 100vh;
   margin: auto;
   display: grid;
   padding: 2rem;
@@ -185,6 +279,16 @@ nav li .nav-map-btn i {
   overflow: hidden;
 
   border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.add-cart-btn {
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.5rem;
+
+  background-color: #be8965;
+  color: #2f231b;
 }
 
 /* Hide */
