@@ -16,9 +16,9 @@
     <div class="hero-banner-promo">
       <p>Free standard shipping to the US and Korea until Dec 02.</p>
     </div>
-    <header class="hero overlay dimension">
-      <nav class="overlay-nav">
-        <li class="eclat-brand">éclat</li>
+    <header class="hero overlay" data-qa="hero">
+      <nav class="overlay-nav" data-qa="overlay-nav">
+        <li class="eclat-brand" data-qa="eclat-brand">éclat</li>
         <!-- <li><i class="ph-bold ph-calendar-heart"></i></li> -->
         <li>
           <button
@@ -36,10 +36,10 @@
         </li>
       </nav>
       <!-- <h1>Glow Naturally</h1> -->
-      <div class="glow-line-box">
-        <h1>Glow Naturally</h1>
+      <div class="glow-line-box" data-qa="glow-line-box">
+        <h1>Glow naturally</h1>
         <div class="skincare-box">
-          <skin class="skincare">Curated skincare for every</skin>
+          <span class="skincare">Curated skincare for every</span>
           <span class="skin">skin</span>
           <span class="type">type</span>
         </div>
@@ -61,10 +61,10 @@
           alt="green serum"
           class="serum-item"
         />
-        <button class="serum-btn btn-background">
+        <button class="serum-btn btn-background" data-qa="serum-btn">
           <i class="ph-bold ph-plus-circle ph-serum-add"></i>
         </button>
-        <p class="serum-name">Radiance Revive Elixir</p>
+        <p class="serum-name" data-qa="serum-name">Radiance Revive Elixir</p>
         <p class="serum-description">
           Infused with fermented ginseng and white tea extract, this luxurious
           serum restores skin luminosity and promotes a youthful, dewy glow.
@@ -77,10 +77,12 @@
           alt="green serum"
           class="serum-item"
         />
-        <button class="serum-btn btn-background">
+        <button class="serum-btn btn-background" data-qa="serum-btn">
           <i class="ph-bold ph-plus-circle ph-serum-add"></i>
         </button>
-        <p class="serum-name">Jeju Tangerine Vital Serum</p>
+        <p class="serum-name" data-qa="serum-name">
+          Jeju Tangerine Vital Serum
+        </p>
         <p class="serum-description">
           Packed with fresh Jeju tangerine essence and vitamin C, this
           brightening formula energizes dull skin and evens out the complexion.
@@ -92,10 +94,10 @@
           alt="green serum"
           class="serum-item"
         />
-        <button class="serum-btn btn-background">
+        <button class="serum-btn btn-background" data-qa="serum-btn">
           <i class="ph-bold ph-plus-circle ph-serum-add"></i>
         </button>
-        <p class="serum-name">Snow Blossom Essence</p>
+        <p class="serum-name" data-qa="serum-name">Snow Blossom Essence</p>
         <p class="serum-description">
           Enriched with pearl extract and lotus flower water, this silky serum
           hydrates deeply, leaving skin smooth, radiant, and velvety soft.
@@ -121,11 +123,58 @@
           </button>
         </li>
       </nav>
-      <div class="shop-grid">
+      <div class="shop-grid" data-qa="shop-grid">
+        <div class="shop-item" data-qa="shop-item">
+          <img
+            class="shop-item-image"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
+            alt="complete-pack"
+          />
+          <p>Complete pack</p>
+          <button class="add-cart-btn" data-qa="add-cart-btn">
+            Add to cart
+          </button>
+        </div>
         <div class="shop-item">
           <img
             class="shop-item-image"
-            src="https://www.lummi.ai/api/render/image/2280d1ea-9f2d-4af1-aeb4-dd79ca6f6c79?token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIyODBkMWVhLTlmMmQtNGFmMS1hZWI0LWRkNzljYTZmNmM3OSIsImRvd25sb2FkU2l6ZSI6Im1lZGl1bSIsInJlbmRlclNwZWNzIjp7ImVmZmVjdHMiOnsicmVmcmFtZSI6e319fSwic2hvdWxkQXV0b0Rvd25sb2FkIjpmYWxzZSwianRpIjoiOUpPRXFGYXZNRHc0VEJORXcwa0w1IiwiaWF0IjoxNzQ3NTY3MjMzLCJleHAiOjE3NDc1NjcyOTN9.2Wv7TL-g8gXPKzjaYj7Ge5GsudVRrb4ng9t_BxKdJQs"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
+            alt="complete-pack"
+          />
+          <p>Complete pack</p>
+          <button class="add-cart-btn">Add to cart</button>
+        </div>
+        <div class="shop-item">
+          <img
+            class="shop-item-image"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
+            alt="complete-pack"
+          />
+          <p>Complete pack</p>
+          <button class="add-cart-btn">Add to cart</button>
+        </div>
+        <div class="shop-item">
+          <img
+            class="shop-item-image"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
+            alt="complete-pack"
+          />
+          <p>Complete pack</p>
+          <button class="add-cart-btn">Add to cart</button>
+        </div>
+        <div class="shop-item">
+          <img
+            class="shop-item-image"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
+            alt="complete-pack"
+          />
+          <p>Complete pack</p>
+          <button class="add-cart-btn">Add to cart</button>
+        </div>
+        <div class="shop-item">
+          <img
+            class="shop-item-image"
+            src="/eclat/images/Minimalist Skincare Product Display.png"
             alt="complete-pack"
           />
           <p>Complete pack</p>

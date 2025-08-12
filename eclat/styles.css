@@ -17,6 +17,8 @@ body {
   margin: auto;
 
   background: linear-gradient(to right, #ffd4830c, #cda17d0c);
+
+  overflow-x: hidden;
 }
 
 .hero-banner-promo {
@@ -85,7 +87,7 @@ nav li .nav-map-btn i {
 
 .eclat-brand {
   /* padding: 0.5rem 1.5rem; */
-  color: #e9a7bb;
+  color: #f5e6dc;
   font-size: 10.5rem;
   font-weight: 300;
   font-family: "Great Vibes", cursive;
@@ -244,7 +246,8 @@ nav li .nav-map-btn i {
 /* Shop section */
 
 .shop-section {
-  background-color: #f5e6dc;
+  background-color: #fffcfa;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -254,7 +257,6 @@ nav li .nav-map-btn i {
 
 .shop-grid {
   width: 100vw;
-  height: 100vh;
   margin: auto;
   display: grid;
   padding: 2rem;
@@ -264,10 +266,22 @@ nav li .nav-map-btn i {
 }
 
 .shop-item {
-  width: 100%;
+  width: 70%;
 
   display: grid;
   grid-template-rows: 8fr 1fr 1fr;
+  gap: 0.3rem;
+}
+
+.shop-item p {
+  font-size: 1.5rem;
+}
+
+.shop-item p,
+.shop-item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .shop-item-image {
